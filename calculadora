@@ -1,0 +1,43 @@
+#include <stdio.h>
+// Inclui a biblioteca padrão de entrada e saída, necessária para usar funções como printf e scanf.
+
+int main()
+// Define a função principal do programa, onde a execução começa.
+{
+    int a = 3, b = 2;
+    // Declara duas variáveis inteiras 'a' e 'b' e as inicializa com valores 3 e 2, respectivamente.
+
+    // Entrada de dados
+    printf("digite o valor de a: \n");
+    // Exibe uma mensagem solicitando ao usuário para digitar o valor de 'a'.
+
+    scanf("%d", &a);
+    // Lê um número inteiro digitado pelo usuário e armazena o valor na variável 'a'.
+
+    printf("digite o valor de b: \n");
+    // Exibe uma mensagem solicitando ao usuário para digitar o valor de 'b'.
+
+    scanf("%d", &b);
+    // Lê um número inteiro digitado pelo usuário e armazena o valor na variável 'b'.
+
+    // Saída de dados
+    printf("Soma = %d \n", a + b);
+    // Exibe a soma de 'a' e 'b' com o especificador de formato '%d', que imprime números inteiros.
+
+    printf("Subtracao = %d \n", a - b);
+    // Exibe a subtração de 'a' e 'b'.
+
+    printf("divisao = %.2f \n", a * 1.0 / b);
+    // Exibe a divisão de 'a' por 'b'. Para garantir que a operação seja realizada com precisão decimal,
+    // multiplicamos 'a' por 1.0 (convertendo-o para float) antes da divisão.
+    // O especificador '%.2f' imprime o resultado com 2 casas decimais.
+
+    printf("multiplicacao = %d \n", a * b);
+    // Exibe o produto de 'a' e 'b'.
+
+    printf("resto divisao = %d \n", a % b);
+    // Exibe o resto da divisão de 'a' por 'b', que é obtido usando o operador módulo (%).
+
+    return 0;
+    // Indica que o programa terminou sua execução com sucesso.
+}
