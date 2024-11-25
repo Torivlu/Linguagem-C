@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "Portuguese"); // Corrige setLocale para setlocale
+
+    int a = 1, b = 3, soma = 0;
+
+    soma = a + b;
+
+    printf("\n\nSOMA = %d\n", soma); // Corrige prinft para printf e usa %d para imprimir soma
+    return 0;
+}
