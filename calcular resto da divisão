@@ -1,0 +1,27 @@
+#include <stdio.h>
+// Inclui a biblioteca padrão de entrada e saída, necessária para usar funções como printf e scanf.
+
+int main(void) 
+// Define a função principal do programa, onde a execução começa.
+{
+    int numero, resto;
+    // Declara duas variáveis inteiras: 'numero' para armazenar o valor inserido pelo usuário 
+    // e 'resto' para armazenar o resultado da operação módulo.
+
+    printf("Digite um valor: ");
+    // Exibe uma mensagem pedindo ao usuário para inserir um número.
+
+    scanf("%d", &numero);
+    // Lê o número inteiro digitado pelo usuário e o armazena na variável 'numero'.
+
+    resto = numero % 2;
+    // Calcula o resto da divisão do número por 2 (operação módulo) e armazena o resultado em 'resto'.
+
+    printf(" \nO resto (mod) da divisao por 2 =  %d", resto, "\n");
+    // Exibe o valor do resto calculado. 
+    // OBS: O uso de `"\n"` como argumento na chamada de `printf` não faz efeito aqui. 
+    // O correto seria usá-lo dentro do formato da string.
+
+    return 0;
+    // Indica que o programa terminou sua execução com sucesso.
+}
