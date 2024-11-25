@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+// Cria uma STRUCT para armazenar os dados de uma pessoa
+typedef struct
+{
+    float Peso;   // Define o campo peso
+    int Idade;    // Define o campo idade
+    float Altura; // Define o campo altura
+} Pessoa; // Define o nome do novo tipo criado
+
+// Declara o parâmetro como uma struct
+void ImprimePessoa(Pessoa p)
+{
+    // Corrigido o uso da variável: alterado de P para p
+    printf("Idade: %d Peso: %.2f Altura: %.2f\n", p.Idade, p.Peso, p.Altura);
+}
+
+int main()
+{
+    Pessoa Joao, P2;
+    Pessoa Povo[10];
+    
+    Joao.Idade = 15;
+    Joao.Peso = 60.5;
+    Joao.Altura = 1.75;
+    
+    Povo[4].Idade = 23;
+    Povo[4].Peso = 75.3;
+    Povo[4].Altura = 1.89;
+    
+    P2 = Povo[4];
+    P2.Idade++;
+    
+    // Chama função que recebe a struct como parâmetro
+    ImprimePessoa(Joao);
+    ImprimePessoa(Povo[4]);
+    ImprimePessoa(P2);
+    
+    return 0;
+}
+
