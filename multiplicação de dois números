@@ -1,0 +1,31 @@
+#include <stdio.h>
+// Inclui a biblioteca padrão de entrada e saída, necessária para usar funções como printf e scanf.
+
+int main()
+// Define a função principal do programa, onde a execução começa.
+{
+    int a, b, soma, mult;
+    // Declara quatro variáveis inteiras: 
+    // 'a' e 'b' armazenarão os números inseridos pelo usuário,
+    // 'soma' é declarada mas não utilizada (pode ser removida sem impacto),
+    // 'mult' armazenará o resultado da multiplicação.
+
+    printf("Digite o primeiro numero: ");
+    // Exibe uma mensagem pedindo ao usuário para inserir o valor de 'a'.
+    scanf("%d", &a);
+    // Lê o valor inteiro digitado pelo usuário e o armazena na variável 'a'.
+
+    printf("Digite o segundo numero: ");
+    // Exibe uma mensagem pedindo ao usuário para inserir o valor de 'b'.
+    scanf("%d", &b);
+    // Lê o valor inteiro digitado pelo usuário e o armazena na variável 'b'.
+
+    mult = a * b;
+    // Calcula o produto de 'a' e 'b', armazenando o resultado na variável 'mult'.
+
+    printf("\nA multiplicacao dos numeros é: %d", mult);
+    // Exibe o resultado da multiplicação na tela.
+
+    return 0;
+    // Indica que o programa terminou sua execução com sucesso.
+}
