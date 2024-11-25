@@ -1,0 +1,33 @@
+#include <stdio.h>
+// Inclui a biblioteca padrão de entrada e saída, necessária para funções como printf e scanf.
+
+#include <locale.h>
+// Inclui a biblioteca para suporte à localização, permitindo configurar opções regionais, como idioma e formatos.
+
+int main()
+// Define a função principal do programa, onde a execução começa.
+{
+    setlocale(LC_ALL, "Portuguese");
+    // Configura a localização para o idioma português. Isso é útil para exibir corretamente caracteres acentuados,
+    // dependendo do sistema operacional e ambiente.
+
+    int n1 = 0, n2 = 0, n3 = 0, n4 = 0, n5 = 0, n6 = 0, soma = 0;
+    // Declara sete variáveis inteiras:
+    // - 'n1' a 'n6' armazenarão os seis números digitados pelo usuário.
+    // - 'soma' armazenará o resultado da soma dos números.
+
+    printf("Digite seis numeros:\n ");
+    // Exibe uma mensagem solicitando ao usuário que insira seis números.
+
+    scanf("%d %d %d %d %d %d", &n1, &n2, &n3, &n4, &n5, &n6);
+    // Lê seis números inteiros inseridos pelo usuário e os armazena nas variáveis 'n1' a 'n6'.
+   
+    soma = n1 + n2 + n3 + n4 + n5 + n6;
+    // Calcula a soma dos seis números digitados e armazena o resultado na variável 'soma'.
+
+    printf("\nSOMA = %d", soma);
+    // Exibe o resultado da soma na tela.
+
+    return 0;
+    // Indica que o programa terminou sua execução com sucesso.
+}
