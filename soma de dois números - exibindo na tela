@@ -1,0 +1,40 @@
+#include <stdio.h>
+// Inclui a biblioteca padrão de entrada e saída, necessária para funções como printf e scanf.
+
+#include <locale.h>
+// Inclui a biblioteca para suporte à localização, permitindo configurar opções regionais como idioma e formatos.
+
+int main()
+// Define a função principal do programa, onde a execução começa.
+{
+    setlocale(LC_ALL, "Portuguese");
+    // Configura a localização para o idioma português. Isso é útil para exibir caracteres acentuados
+    // e outros símbolos específicos do idioma, dependendo do sistema operacional e do ambiente.
+
+    int numeroX = 0, numeroY = 0, soma = 0;
+    // Declara três variáveis inteiras:
+    // 'numeroX' para armazenar o primeiro número digitado,
+    // 'numeroY' para o segundo número, e
+    // 'soma' para armazenar o resultado da soma.
+
+    printf("\nDIGITE o primeiro NUMERO \n");
+    // Exibe a mensagem solicitando ao usuário que digite o primeiro número.
+
+    scanf("%d", &numeroX);
+    // Lê o número inteiro inserido pelo usuário e o armazena na variável 'numeroX'.
+
+    printf("\nDIGITE o segundo NUMERO \n");
+    // Exibe a mensagem solicitando ao usuário que digite o segundo número.
+
+    scanf("%d", &numeroY);
+    // Lê o número inteiro inserido pelo usuário e o armazena na variável 'numeroY'.
+
+    soma = numeroX + numeroY;
+    // Calcula a soma das variáveis 'numeroX' e 'numeroY' e armazena o resultado em 'soma'.
+
+    printf("\nSOMA = %d\n", soma);
+    // Exibe o resultado da soma na tela.
+
+    return 0;
+    // Indica que o programa terminou sua execução com sucesso.
+}
