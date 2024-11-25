@@ -1,0 +1,21 @@
+#include <stdio.h>
+// Inclui a biblioteca padrão de entrada e saída, necessária para usar funções como printf.
+
+int main()
+// Define a função principal do programa, onde a execução começa.
+{
+   char palavra[20] = {"Hello World!"};
+   // Declara um array de caracteres chamado 'palavra' com capacidade para até 19 caracteres
+   // e o caractere nulo '\0' (total de 20 posições). 
+   // Inicializa o array com a string "Hello World!".
+
+   gets(palavra);
+   // Lê uma linha de entrada do usuário e armazena no array 'palavra'.
+  
+
+   printf("\n%s", palavra);
+   // Exibe o conteúdo do array 'palavra'.
+
+   return 0;
+   // Indica que o programa terminou sua execução com sucesso.
+}
