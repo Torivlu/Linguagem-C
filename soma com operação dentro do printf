@@ -1,0 +1,25 @@
+#include <stdio.h>
+// Inclui a biblioteca padrão de entrada e saída, necessária para usar funções como printf.
+
+#include <locale.h>
+// Inclui a biblioteca para suporte à localização, permitindo configurar opções regionais como idioma e formatos.
+
+int main()
+// Define a função principal do programa, onde a execução começa.
+{
+    setlocale(LC_ALL, "Portuguese"); 
+    // Configura a localização para o idioma português. Isso permite exibir corretamente caracteres acentuados,
+    // dependendo do sistema operacional e ambiente de execução.
+
+    int a = 2, b = 3;
+    // Declara duas variáveis inteiras 'a' e 'b', inicializando-as com os valores 2 e 3, respectivamente.
+
+    printf("\nSOMA = %d ", a + b, "\n");
+    // Exibe a soma das variáveis 'a' e 'b'. 
+    // Observação: O uso de `"\n"` como um argumento adicional é desnecessário e incorreto. 
+    // Apenas o primeiro argumento formatado ("%d") é usado, e `"\n"` será ignorado. 
+    // O correto seria incluí-lo na string de formato, como mostrado abaixo.
+
+    return 0;
+    // Indica que o programa terminou sua execução com sucesso.
+}
