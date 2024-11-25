@@ -1,0 +1,33 @@
+#include <stdio.h>
+// Inclui a biblioteca padrão de entrada e saída, necessária para usar funções como printf e scanf.
+
+int main()
+// Define a função principal do programa, onde a execução começa.
+{
+    int nX = 0, nY = 0, soma = 0;
+    // Declara três variáveis inteiras:
+    // - 'nX' e 'nY' armazenarão os dois números digitados pelo usuário.
+    // - 'soma' armazenará o resultado da soma desses dois números.
+
+    printf("Digite o numero 1: ");
+    // Exibe uma mensagem pedindo ao usuário para inserir o primeiro número.
+
+    scanf("%d", &nX);
+    // Lê o número inteiro inserido pelo usuário e o armazena na variável 'nX'.
+
+    printf("Digite o numero 2: ");
+    // Exibe uma mensagem pedindo ao usuário para inserir o segundo número.
+
+    scanf("%d", &nY);
+    // Lê o número inteiro inserido pelo usuário e o armazena na variável 'nY'.
+
+    soma = nX + nY;
+    // Calcula a soma das variáveis 'nX' e 'nY' e armazena o resultado na variável 'soma'.
+
+    printf("\nA soma de %d e %d é %d\n", nX, nY, soma);
+    // Exibe o resultado da soma de 'nX' e 'nY'. A string formatada mostra os valores de 'nX', 'nY' e 'soma'.
+    // A saída será algo como: "A soma de 3 e 5 é 8".
+
+    return 0;
+    // Indica que o programa terminou sua execução com sucesso.
+}
