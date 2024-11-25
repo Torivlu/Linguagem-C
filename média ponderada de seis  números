@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int n1, n2, n3, n4, n5, n6;
+    float media; // Corrige o tipo para float
+
+    printf("Digite seis numeros: ");
+
+    scanf("%d", &n1);
+    scanf("%d", &n2);
+    scanf("%d", &n3);
+    scanf("%d", &n4);
+    scanf("%d", &n5);
+    scanf("%d", &n6);
+
+    // Cálculo da média ponderada com a soma dos pesos
+    media = ((n1 * 5) + (n2 * 3) + (n3 * 2) + (n4 * 3) + (n5 * 2) + (n6 * 4)) / 19.0;
+
+    printf("Media dos valores = %.2f\n", media); // Usa %.2f para exibir 2 casas decimais
+
+    return 0;
+}
