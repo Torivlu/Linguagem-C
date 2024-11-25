@@ -1,0 +1,28 @@
+#include <stdio.h>
+// Inclui a biblioteca padrão de entrada e saída, necessária para usar funções como printf e scanf.
+
+#include <conio.h>
+// Inclui a biblioteca para manipulação de entrada e saída de console. 
+// Nota: Esta biblioteca é específica para alguns compiladores e pode não ser necessária aqui.
+
+int main(void)
+// Define a função principal do programa, onde a execução começa.
+{
+    char nome[61];
+    // Declara um array de caracteres (string) chamado 'nome' com capacidade para até 60 caracteres 
+    // mais o caractere nulo '\0' (total de 61 posições).
+
+    printf("Digite seu nome: ");
+    // Exibe uma mensagem pedindo ao usuário para inserir seu nome.
+
+    scanf("%s", &nome);
+    // Lê a entrada do usuário e a armazena no array 'nome'.
+    // Nota: `%s` captura a entrada até o primeiro espaço em branco. 
+    // Para capturar nomes com espaços, usar `fgets` seria mais adequado.
+
+    printf("O nome armazenado foi: %s", nome);
+    // Exibe o conteúdo armazenado na variável 'nome'.
+
+    return 0;
+    // Indica que o programa terminou sua execução com sucesso.
+}
