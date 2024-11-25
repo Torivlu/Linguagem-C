@@ -1,0 +1,19 @@
+#include <stdio.h>
+// Inclui a biblioteca padrão de entrada e saída, necessária para usar funções como printf e scanf.
+
+int main()
+// Define a função principal do programa, onde a execução começa.
+{
+   char nome[50];
+   // Declara um array de caracteres chamado 'nome' com capacidade para armazenar até 49 caracteres
+   // e o caractere nulo '\0' (total de 50 posições).
+
+   printf("Digite seu nome: ");
+   // Exibe uma mensagem pedindo ao usuário para inserir seu nome.
+
+   scanf("%50[^\n]%*c", nome);
+   // Lê a entrada do usuário e armazena no array 'nome'.
+   // Especificação detalhada:
+   // - `%50` limita a leitura a, no máximo, 50 caracteres.
+   // - `[^\n]` indica que qualquer caractere, exceto a nova linha (`\n`), será lido.
+   // - `%*c` consome o caractere de nova linha deixado no buffer
