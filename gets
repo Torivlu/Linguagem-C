@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    
+char nome[50];
+
+printf("Digite seu nome: ");
+gets(nome); /*função que armazena tudo o que foi digitado,
+invlusive os espaços, até que a tecla ENTER seja pressionada*/
+
+printf("Nome = %s", nome);
+
+    return 0;
+}
