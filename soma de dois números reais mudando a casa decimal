@@ -1,0 +1,43 @@
+#include <stdio.h>
+// Inclui a biblioteca padrão de entrada e saída, necessária para usar funções como printf e scanf.
+
+#include <locale.h>
+// Inclui a biblioteca para suporte à localização, permitindo configurar opções regionais como idioma e formatos.
+
+int main()
+// Define a função principal do programa, onde a execução começa.
+{
+   setlocale(LC_ALL, "Portuguese");
+   // Configura a localização para o idioma português, o que permite exibir corretamente caracteres acentuados
+   // e utilizar formatos específicos de acordo com o idioma, caso o sistema suporte essa configuração.
+
+   float nX = 0, nY = 0, soma = 0;
+   // Declara três variáveis do tipo float:
+   // - 'nX' e 'nY' armazenarão os números decimais (ponto flutuante) digitados pelo usuário.
+   // - 'soma' armazenará o resultado da soma desses dois números.
+
+   printf("Digite o número 1: ");
+   // Exibe uma mensagem solicitando ao usuário para inserir o primeiro número.
+
+   scanf("%f", &nX);
+   // Lê um número decimal inserido pelo usuário e o armazena na variável 'nX'.
+   // O especificador de formato "%f" é usado para ler números do tipo float.
+
+   printf("Digite o segundo número: ");
+   // Exibe uma mensagem solicitando ao usuário para inserir o segundo número.
+
+   scanf("%f", &nY);
+   // Lê um número decimal inserido pelo usuário e o armazena na variável 'nY'.
+
+   soma = nX + nY;
+   // Calcula a soma das variáveis 'nX' e 'nY' e armazena o resultado na variável 'soma'.
+
+   printf("\nsoma = %.1f + %.1f = %.2f\n", nX, nY, soma);
+   // Exibe a soma de 'nX' e 'nY' de forma formatada:
+   // - '%.1f' imprime cada número com 1 casa decimal.
+   // - '%.2f' imprime o resultado da soma com 2 casas decimais.
+   // O resultado será algo como: "soma = 3.5 + 4.5 = 8.00".
+
+   return 0;
+   // Indica que o programa terminou sua execução com sucesso.
+}
